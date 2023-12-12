@@ -3,58 +3,62 @@
 <head>
    <meta charset="UTF-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-   <!-- Latest compiled and minified CSS -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-   <!-- Optional theme -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+   <link rel="stylesheet" href="options.css" />
    <title>Salesforce Inspector Reloaded | Options</title>
 </head>
 <body>
-   <div class="container">
-      <h1>Salesforce Inspector Reloaded - Options</h1>
-      <h2>General settings</h2>
-      <form class="form-inline">
-         <div class="row">
-            <div class="col-md-4">
-               <label class="control-label" for="ColorTheme">Color Theme</label>
-            </div>
-            <div class="col-md-4">
-               <select id="ColorTheme" name="ColorTheme" class="form-control">
-                  <option>Light</option>
-                  <option>Dark</option>
-               </select>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-4">
-               <label class="control-label" for="defaultAspect">Default tab on popup</label>
-            </div>
-            <div class="col-md-4">
-               <select id="defaultAspect" name="defaultAspect" class="form-control">
-                  <option>Object tab</option>
-                  <option>User tab</option>
-                  <option>Shortcuts tab</option>
-               </select>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-4"><label class="control-label" for="openInNewTab">Open pages in new tab</label></div>
-            <div class="col-md-4">
-               <select id="openInNewTab" name="openInNewTab" class="form-control">
-                  <option>Yes</option>
-                  <option>No</option>
-               </select>
-            </div>
-         </div>
-         <div class="row">
-            <div class="col-md-4 col-md-offset-4">
-               <button type="submit" class="btn btn-primary">Save</button>
-            </div>
-         </div>
-      </form>
+   <p class="subtitle">Salesforce Inspector Reloaded</p>
+   <h1>Options</h1>
+   <h2>General settings</h2>
+   <div class="row">
+      <label for="ColorTheme">Color Theme</label>
+      <select id="colorTheme" name="ColorTheme">
+         <option>Light</option>
+         <option>Dark</option>
+      </select>
+   </div>
+   <div class="row">
+      <label for="defaultAspect">Default tab on popup</label>
+      <select id="defaultAspect" name="defaultAspect">
+         <option>Object tab</option>
+         <option>User tab</option>
+         <option>Shortcuts tab</option>
+      </select>
+   </div>
+   <div class="row">
+      <label for="openInNewTab">Open pages in new tab</label>
+      <select id="openInNewTab" name="openInNewTab">
+         <option>Yes</option>
+         <option>No</option>
+      </select>
+   </div>
+   <h2>Popup settings</h2>
+   <div class="row">
+      <p>Buttons displayed in popup:</p>
+      <input type="checkbox" name="showExportBtn" id="showExportBtn" />
+      <label for="showExportBtn">Data Export</label>
+      <br>
+      <input type="checkbox" name="showImportBtn" id="showImportBtn" />
+      <label for="showImportBtn">Data Import</label>
+      <br>
+      <input type="checkbox" name="showLimitsBtn" id="showLimitsBtn" />
+      <label for="showLimitsBtn">Org Limits</label>
+      <br>
+      <input type="checkbox" name="showMetadataBtn" id="showMetadataBtn" />
+      <label for="showMetadataBtn">Download Metadata</label>
+      <br>
+      <input type="checkbox" name="showApiBtn" id="showApiBtn" />
+      <label for="showApiBtn">Explore API</label>
+      <br>
+      <input type="checkbox" name="showSetupBtn" id="showSetupBtn" />
+      <label for="showSetupBtn">Setup Home</label>
+      <br>
+   </div>
+   <div class="row">
+      <button type="submit" id="save-btn">Save</button>
+      <p><em id="save_status"></em></p>
    </div>
 
-   <!-- Latest compiled and minified JavaScript -->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+   <script src="options.js"></script>
 </body>
 </html>
