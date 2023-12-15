@@ -7,56 +7,62 @@
    <title>Salesforce Inspector Reloaded | Options</title>
 </head>
 <body>
-   <p class="subtitle">Salesforce Inspector Reloaded</p>
-   <h1>Options</h1>
-   <h2>General settings</h2>
-   <div class="row">
-      <label for="ColorTheme">Color Theme</label>
-      <select id="colorTheme" name="ColorTheme">
-         <option>Light</option>
-         <option>Dark</option>
-      </select>
-   </div>
-   <div class="row">
-      <label for="defaultAspect">Default tab on popup</label>
-      <select id="defaultAspect" name="defaultAspect">
-         <option>Object tab</option>
-         <option>User tab</option>
-         <option>Shortcuts tab</option>
-      </select>
-   </div>
-   <div class="row">
-      <label for="openInNewTab">Open pages in new tab</label>
-      <select id="openInNewTab" name="openInNewTab">
-         <option>Yes</option>
-         <option>No</option>
-      </select>
-   </div>
-   <h2>Popup settings</h2>
-   <div class="row">
-      <p>Buttons displayed in popup:</p>
-      <input type="checkbox" name="showExportBtn" id="showExportBtn" />
-      <label for="showExportBtn">Data Export</label>
-      <br>
-      <input type="checkbox" name="showImportBtn" id="showImportBtn" />
-      <label for="showImportBtn">Data Import</label>
-      <br>
-      <input type="checkbox" name="showLimitsBtn" id="showLimitsBtn" />
-      <label for="showLimitsBtn">Org Limits</label>
-      <br>
-      <input type="checkbox" name="showMetadataBtn" id="showMetadataBtn" />
-      <label for="showMetadataBtn">Download Metadata</label>
-      <br>
-      <input type="checkbox" name="showApiBtn" id="showApiBtn" />
-      <label for="showApiBtn">Explore API</label>
-      <br>
-      <input type="checkbox" name="showSetupBtn" id="showSetupBtn" />
-      <label for="showSetupBtn">Setup Home</label>
-      <br>
-   </div>
-   <div class="row">
-      <button type="submit" id="save-btn">Save</button>
-      <p><em id="save_status"></em></p>
+   <div class="container">
+      <p class="subtitle">Salesforce Inspector Reloaded</p>
+      <h1>Options</h1>
+      <div class="settings-group">
+         <h2>General settings</h2>
+         <div class="row">
+            <label for="ColorTheme">Color Theme</label>
+            <select id="colorTheme" name="ColorTheme">
+               <option>Light</option>
+               <option>Dark</option>
+            </select>
+         </div>
+         <div class="row">
+            <label for="defaultAspect">Default tab on popup</label>
+            <select id="defaultAspect" name="defaultAspect">
+               <option>Object tab</option>
+               <option>User tab</option>
+               <option>Shortcuts tab</option>
+            </select>
+         </div>
+         <div class="row">
+            <label for="openInNewTab">Open pages in new tab</label>
+            <select id="openInNewTab" name="openInNewTab">
+               <option>Yes</option>
+               <option>No</option>
+            </select>
+         </div>
+      </div>
+      <div class="settings-group">
+         <h2>Popup settings</h2>
+         <div class="row">
+            <p>Buttons displayed in popup:</p>
+            <input type="checkbox" name="showExportBtn" id="showExportBtn" />
+            <label for="showExportBtn">Data Export</label>
+            <br>
+            <input type="checkbox" name="showImportBtn" id="showImportBtn" />
+            <label for="showImportBtn">Data Import</label>
+            <br>
+            <input type="checkbox" name="showLimitsBtn" id="showLimitsBtn" />
+            <label for="showLimitsBtn">Org Limits</label>
+            <br>
+            <input type="checkbox" name="showMetadataBtn" id="showMetadataBtn" />
+            <label for="showMetadataBtn">Download Metadata</label>
+            <br>
+            <input type="checkbox" name="showApiBtn" id="showApiBtn" />
+            <label for="showApiBtn">Explore API</label>
+            <br>
+            <input type="checkbox" name="showSetupBtn" id="showSetupBtn" />
+            <label for="showSetupBtn">Setup Home</label>
+            <br>
+         </div>
+      </div>
+      <div class="row">
+         <button type="submit" id="save-btn">Save</button>
+         <p><em id="save_status"></em></p>
+      </div>
    </div>
 
    <script src="options.js"></script>
